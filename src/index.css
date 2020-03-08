@@ -1,6 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Montserrat:300,400,700,900&display=swap');
+
+*,
+html,
 body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  align-items: center;
+  background-image: radial-gradient(circle at center center, rgb(86, 197, 113),rgb(77, 181, 95),rgb(67, 165, 77),rgb(58, 149, 59),rgb(48, 133, 41));
+  background-repeat: no-repeat;
+  display: flex;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  justify-content: center;
   margin: auto;
   max-width: 38rem;
   padding: 2rem;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+
+#price {
+  color: #fff;
+  font-family: "Maven Pro", arial, helvetica, sans-serif;
+  font-size: 18vw;
+  font-weight: 700;
+  text-shadow: 0 2vw 2vw rgba(37, 39, 41, .2), -.5vw 0 rgba(37, 39, 41, .5), 0 .5vw rgba(37, 39, 41, .5), .5vw 0 rgba(37, 39, 41, .5), 0 -.5vw rgba(37, 39, 41, .5);
 }
