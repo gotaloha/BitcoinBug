@@ -35,3 +35,41 @@ body {
   font-weight: 700;
   text-shadow: 0 2vw 2vw rgba(37, 39, 41, .2), -.5vw 0 rgba(37, 39, 41, .5), 0 .5vw rgba(37, 39, 41, .5), .5vw 0 rgba(37, 39, 41, .5), 0 -.5vw rgba(37, 39, 41, .5);
 }
+
+.app {
+  display: flex;
+  flex-directioN: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  margin-top: 0px;
+  width: 15px;
+}
+
+.disc {
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+.disc circle {
+  animation: 300s linear infinite both circle--animation;
+  fill: transparent;
+  stroke: rgba(255,255,255,.5);
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 80;
+}
+
+@keyframes circle--animation {
+  0% {
+    stroke-dashoffset: 80;
+  }
+
+  50% {
+    stroke-dashoffset: 360;
+  }
+}

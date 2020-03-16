@@ -1,0 +1,16 @@
+{
+  "title": "Code Walkthrough",
+  "steps": [
+    {
+      "file": "src/index.js",
+      "line": 9,
+      "description": "This function sets parameters that control the application's window.\n\nIn this case, I want the app to always sit on top of all other running applications or documents. I then set the height and width, with minimum dimensions added since I also want the app to be resizable. I don't want to display a title at the top of the app, and I want the background to be see-through. I want to have access to Node in my app, and I don't want Dev Tools open (this is toggled when in development/production).\n\nMore options are available but have not been added here."
+    },
+    {
+      "file": "src/render.js",
+      "line": 7,
+      "description": "This simple function takes in an URL to an API, fetches the data as JSON.\n\nIn this instance, this data is parsed to retrieve a known value for the current price of Bitcoin in US dollars. Once we have this value, it is simply injected into a placeholder element, found in `index.html`"
+    }
+  ],
+  "ref": "master"
+}
