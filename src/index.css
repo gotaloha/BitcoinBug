@@ -54,7 +54,7 @@ body {
 }
 
 .disc circle {
-  animation: 300s linear infinite both circle--animation;
+  animation: 300s linear infinite circle--animation;
   fill: transparent;
   stroke: rgba(255,255,255,.5);
   stroke-width: 10;
